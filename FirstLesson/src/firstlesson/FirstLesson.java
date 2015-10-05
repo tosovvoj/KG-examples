@@ -17,7 +17,7 @@ public class FirstLesson {
     /**
      * @param args the command line arguments
      */
-    public static void mmain(String[] args) {
+    public static void main(String[] args) {
         Scanner inputScanner = new Scanner(System.in);
         System.out.println("Zadejte prvni cislo: ");
         int a = inputScanner.nextInt();
@@ -28,16 +28,6 @@ public class FirstLesson {
             minimum = b;
         }
         System.out.println("Minimu je: " + minimum);
-    }
-    public static void main(String[] args) {
-        Scanner inputScanner = new Scanner(System.in);
-        int a = inputScanner.nextInt();
-        int b = inputScanner.nextInt();
-        int min = a;
-        if (b < a) {
-            min = b;
-        }
-        System.out.println("Minimum je: " + min);
     }
 
 }
