@@ -41,11 +41,9 @@ public class FirstLesson {
         int dvaVJednom = 5;
     }
 
-    public void useIF() {
+    public static void useIF() {
         Scanner inputScanner = new Scanner(System.in);
         int x = inputScanner.nextInt();
-        x = x - 3;
-        System.out.println(x);
         String parita = new String();
         if (x % 2 == 0) {
             parita = new String("sude");
@@ -53,7 +51,7 @@ public class FirstLesson {
         if (x % 2 == 1) {
             parita = new String("liche");
         }
-        System.out.println("Zde mohu napsat temer cokoliv");
+        System.out.println("Cislo je " + parita);
     }
 
 }
