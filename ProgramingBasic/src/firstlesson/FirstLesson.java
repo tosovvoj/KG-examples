@@ -18,6 +18,15 @@ public class FirstLesson {
 	 * @param args the command line arguments
 	 */
 	public static void main(String[] args) {
+		Scanner inputScanner = new Scanner(System.in);
+		int x = 0;
+		while (x < 3) {
+			System.out.println("Ahoj poprve");
+			System.out.println("Ahoj podruhe");
+			System.out.println("Ahoj potreti");
+			System.out.println("Chcete-li pozdraveit, zadejte csilo mensi nez 3");
+			x = inputScanner.nextInt();
+		}
 	}
 
 	private static void tisk() {
