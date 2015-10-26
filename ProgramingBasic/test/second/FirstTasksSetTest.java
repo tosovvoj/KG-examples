@@ -453,7 +453,7 @@ public class FirstTasksSetTest {
 		int a = 700;
 		int b = -1000;
 		int c = -1000;
-		int expResult = 700;
+		int expResult = -1000;
 		int result = FirstTasksSet.middle(a, b, c);
 		assertEquals(expResult, result);
 	}
