@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package second;
 
 import static org.junit.Assert.assertEquals;
@@ -17,9 +16,6 @@ public class FirstTasksSetTest {
 
 	public FirstTasksSetTest() {
 	}
-
-
-
 
 	/**
 	 * Test of one method, of class FirstTasksSet.
@@ -44,6 +40,7 @@ public class FirstTasksSetTest {
 		assertEquals(expResult, result);
 		// TODO review the generated test code and remove the default call to fail.
 	}
+
 	/**
 	 * Test of same method, of class FirstTasksSet.
 	 */
@@ -79,6 +76,7 @@ public class FirstTasksSetTest {
 		int result = FirstTasksSet.incermentor(i);
 		assertEquals(expResult, result);
 	}
+
 	/**
 	 * Test of incermentor method, of class FirstTasksSet.
 	 */
@@ -114,6 +112,7 @@ public class FirstTasksSetTest {
 		int result = FirstTasksSet.signum(i);
 		assertEquals(expResult, result);
 	}
+
 	/**
 	 * Test of signum method, of class FirstTasksSet.
 	 */
@@ -149,6 +148,7 @@ public class FirstTasksSetTest {
 		int result = FirstTasksSet.contentSquare(side);
 		assertEquals(expResult, result);
 	}
+
 	@Test
 	public void testContentSquare3() {
 		System.out.println("contentSquare3");
@@ -210,6 +210,7 @@ public class FirstTasksSetTest {
 		int result = FirstTasksSet.max(a, b, c);
 		assertEquals(expResult, result);
 	}
+
 	@Test
 	public void testMax2() {
 		System.out.println("max");
@@ -326,10 +327,32 @@ public class FirstTasksSetTest {
 	@Test
 	public void testmin6() {
 		System.out.println("min");
-		int a = 800;
+		int a = 700;
 		int b = 700;
 		int c = 1000;
 		int expResult = 700;
+		int result = FirstTasksSet.min(a, b, c);
+		assertEquals(expResult, result);
+	}
+
+	@Test
+	public void testmin7() {
+		System.out.println("min");
+		int a = 800;
+		int b = 700;
+		int c = 700;
+		int expResult = 700;
+		int result = FirstTasksSet.min(a, b, c);
+		assertEquals(expResult, result);
+	}
+
+	@Test
+	public void testmin8() {
+		System.out.println("min");
+		int a = 300;
+		int b = 700;
+		int c = 300;
+		int expResult = 300;
 		int result = FirstTasksSet.min(a, b, c);
 		assertEquals(expResult, result);
 	}
@@ -398,6 +421,38 @@ public class FirstTasksSetTest {
 		int a = 800;
 		int b = 700;
 		int c = 1000;
+		int expResult = 800;
+		int result = FirstTasksSet.middle(a, b, c);
+		assertEquals(expResult, result);
+	}
+
+	@Test
+	public void testmiddle7() {
+		System.out.println("middle");
+		int a = 800;
+		int b = 800;
+		int c = 800;
+		int expResult = 800;
+		int result = FirstTasksSet.middle(a, b, c);
+		assertEquals(expResult, result);
+	}
+
+	@Test
+	public void testmiddle8() {
+		System.out.println("middle");
+		int a = 700;
+		int b = 700;
+		int c = 1000;
+		int expResult = 700;
+		int result = FirstTasksSet.middle(a, b, c);
+		assertEquals(expResult, result);
+	}
+	@Test
+	public void testmiddle9() {
+		System.out.println("middle");
+		int a = 700;
+		int b = -1000;
+		int c = -1000;
 		int expResult = 700;
 		int result = FirstTasksSet.middle(a, b, c);
 		assertEquals(expResult, result);
@@ -425,6 +480,7 @@ public class FirstTasksSetTest {
 		boolean result = FirstTasksSet.isPositive(number);
 		assertEquals(expResult, result);
 	}
+
 	@Test
 	public void testIsPositive2() {
 		System.out.println("isPositive");
@@ -455,6 +511,7 @@ public class FirstTasksSetTest {
 		boolean result = FirstTasksSet.isBothPositive(number1, number2);
 		assertEquals(expResult, result);
 	}
+
 	@Test
 	public void testIsBothPositive2() {
 		System.out.println("isBothPositive");
@@ -499,6 +556,7 @@ public class FirstTasksSetTest {
 		boolean result = FirstTasksSet.atLeastOneNegative(n1, n2, n3, n4);
 		assertEquals(expResult, result);
 	}
+
 	@Test
 	public void testAtLeastOneNegative3() {
 		System.out.println("atLeastOneNegative");
@@ -518,7 +576,7 @@ public class FirstTasksSetTest {
 		int n2 = 0;
 		int n3 = 0;
 		int n4 = -7;
-		boolean expResult = false;
+		boolean expResult = true;
 		boolean result = FirstTasksSet.atLeastOneNegative(n1, n2, n3, n4);
 		assertEquals(expResult, result);
 	}
@@ -566,7 +624,7 @@ public class FirstTasksSetTest {
 		int n2 = 123;
 		int n3 = 123;
 		int n4 = -123;
-		boolean expResult = false;
+		boolean expResult = true;
 		boolean result = FirstTasksSet.atLeastOneNegative(n1, n2, n3, n4);
 		assertEquals(expResult, result);
 	}
@@ -585,6 +643,7 @@ public class FirstTasksSetTest {
 		int result = FirstTasksSet.minOrMax(min, n1, n2, n3);
 		assertEquals(expResult, result);
 	}
+
 	@Test
 	public void testMinOrMax2() {
 		System.out.println("minOrMax");
@@ -608,6 +667,7 @@ public class FirstTasksSetTest {
 		int result = FirstTasksSet.minOrMax(min, n1, n2, n3);
 		assertEquals(expResult, result);
 	}
+
 	@Test
 	public void testMinOrMax4() {
 		System.out.println("minOrMax");
@@ -627,7 +687,19 @@ public class FirstTasksSetTest {
 		int n1 = 987;
 		int n2 = -9;
 		int n3 = 5123;
-		int expResult = 5123;
+		int expResult = -9;
+		int result = FirstTasksSet.minOrMax(min, n1, n2, n3);
+		assertEquals(expResult, result);
+	}
+
+	@Test
+	public void testMinOrMax6() {
+		System.out.println("minOrMax");
+		boolean min = true;
+		int n1 = 5;
+		int n2 = 5;
+		int n3 = 5;
+		int expResult = 5;
 		int result = FirstTasksSet.minOrMax(min, n1, n2, n3);
 		assertEquals(expResult, result);
 	}
@@ -643,6 +715,7 @@ public class FirstTasksSetTest {
 		int result = FirstTasksSet.sumOfAlll(input);
 		assertEquals(expResult, result);
 	}
+
 	@Test
 	public void testSumOfAlll2() {
 		System.out.println("sumOfAlll");
@@ -690,6 +763,7 @@ public class FirstTasksSetTest {
 		int result = FirstTasksSet.sumOfAllPOsitive(input);
 		assertEquals(expResult, result);
 	}
+
 	@Test
 	public void testSumOfAllPOsitive2() {
 		System.out.println("sumOfAllPOsitive");
@@ -737,6 +811,7 @@ public class FirstTasksSetTest {
 		boolean result = FirstTasksSet.somePositive(input);
 		assertEquals(expResult, result);
 	}
+
 	@Test
 	public void testSomePositive2() {
 		System.out.println("somePositive");
@@ -750,7 +825,7 @@ public class FirstTasksSetTest {
 	public void testSomePositive3() {
 		System.out.println("somePositive");
 		String input = "1 2 3 4 5 6 7 8 9 0";
-		boolean expResult = false;
+		boolean expResult = true;
 		boolean result = FirstTasksSet.somePositive(input);
 		assertEquals(expResult, result);
 	}
@@ -770,6 +845,51 @@ public class FirstTasksSetTest {
 		String input = "-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -2 -2 -2 -2 -5 -6 1 0";
 		boolean expResult = true;
 		boolean result = FirstTasksSet.somePositive(input);
+		assertEquals(expResult, result);
+	}
+
+	@Test
+	public void testallPositive() {
+		System.out.println("allPositive");
+		String input = "-1 0 0";
+		boolean expResult = false;
+		boolean result = FirstTasksSet.allPositive(input);
+		assertEquals(expResult, result);
+	}
+
+	@Test
+	public void testallPositive2() {
+		System.out.println("allPositive");
+		String input = "1 0";
+		boolean expResult = true;
+		boolean result = FirstTasksSet.allPositive(input);
+		assertEquals(expResult, result);
+	}
+
+	@Test
+	public void testallPositive3() {
+		System.out.println("allPositive");
+		String input = "1 2 3 4 5 6 7 8 9 0";
+		boolean expResult = true;
+		boolean result = FirstTasksSet.allPositive(input);
+		assertEquals(expResult, result);
+	}
+
+	@Test
+	public void testallPositive4() {
+		System.out.println("allPositive");
+		String input = "-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -2 -2 -2 -2 -5 -6 0 2 3 ";
+		boolean expResult = false;
+		boolean result = FirstTasksSet.allPositive(input);
+		assertEquals(expResult, result);
+	}
+
+	@Test
+	public void testallPositive5() {
+		System.out.println("allPositive");
+		String input = "-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -2 -2 -2 -2 -5 -6 1 0";
+		boolean expResult = false;
+		boolean result = FirstTasksSet.allPositive(input);
 		assertEquals(expResult, result);
 	}
 
