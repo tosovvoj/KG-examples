@@ -848,49 +848,49 @@ public class FirstTasksSetTest {
 		assertEquals(expResult, result);
 	}
 
-	@Test
-	public void testallPositive() {
-		System.out.println("allPositive");
-		String input = "-1 0 0";
-		boolean expResult = false;
-		boolean result = FirstTasksSet.allPositive(input);
-		assertEquals(expResult, result);
-	}
-
-	@Test
-	public void testallPositive2() {
-		System.out.println("allPositive");
-		String input = "1 0";
-		boolean expResult = true;
-		boolean result = FirstTasksSet.allPositive(input);
-		assertEquals(expResult, result);
-	}
-
-	@Test
-	public void testallPositive3() {
-		System.out.println("allPositive");
-		String input = "1 2 3 4 5 6 7 8 9 0";
-		boolean expResult = true;
-		boolean result = FirstTasksSet.allPositive(input);
-		assertEquals(expResult, result);
-	}
-
-	@Test
-	public void testallPositive4() {
-		System.out.println("allPositive");
-		String input = "-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -2 -2 -2 -2 -5 -6 0 2 3 ";
-		boolean expResult = false;
-		boolean result = FirstTasksSet.allPositive(input);
-		assertEquals(expResult, result);
-	}
-
-	@Test
-	public void testallPositive5() {
-		System.out.println("allPositive");
-		String input = "-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -2 -2 -2 -2 -5 -6 1 0";
-		boolean expResult = false;
-		boolean result = FirstTasksSet.allPositive(input);
-		assertEquals(expResult, result);
-	}
+//	@Test
+//	public void testallPositive() {
+//		System.out.println("allPositive");
+//		String input = "-1 0 0";
+//		boolean expResult = false;
+//		boolean result = FirstTasksSet.allPositive(input);
+//		assertEquals(expResult, result);
+//	}
+//
+//	@Test
+//	public void testallPositive2() {
+//		System.out.println("allPositive");
+//		String input = "1 0";
+//		boolean expResult = true;
+//		boolean result = FirstTasksSet.allPositive(input);
+//		assertEquals(expResult, result);
+//	}
+//
+//	@Test
+//	public void testallPositive3() {
+//		System.out.println("allPositive");
+//		String input = "1 2 3 4 5 6 7 8 9 0";
+//		boolean expResult = true;
+//		boolean result = FirstTasksSet.allPositive(input);
+//		assertEquals(expResult, result);
+//	}
+//
+//	@Test
+//	public void testallPositive4() {
+//		System.out.println("allPositive");
+//		String input = "-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -2 -2 -2 -2 -5 -6 0 2 3 ";
+//		boolean expResult = false;
+//		boolean result = FirstTasksSet.allPositive(input);
+//		assertEquals(expResult, result);
+//	}
+//
+//	@Test
+//	public void testallPositive5() {
+//		System.out.println("allPositive");
+//		String input = "-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -2 -2 -2 -2 -5 -6 1 0";
+//		boolean expResult = false;
+//		boolean result = FirstTasksSet.allPositive(input);
+//		assertEquals(expResult, result);
+//	}
 
 }
