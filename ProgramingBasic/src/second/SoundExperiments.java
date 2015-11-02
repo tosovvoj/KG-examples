@@ -24,7 +24,7 @@ public class SoundExperiments {
 	/**
 	 * @param args the command line arguments
 	 */
-	public static void hamain(String[] args) throws InterruptedException, LineUnavailableException, IOException {
+	public static void main(String[] args) throws InterruptedException, LineUnavailableException, IOException {
 //		bezi liska k taboru
 //		cece2gggcece2dddcegedd2ecegedd2c
 		map = new HashMap<Character, Integer>();
