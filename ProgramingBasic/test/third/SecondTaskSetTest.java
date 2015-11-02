@@ -163,7 +163,7 @@ public class SecondTaskSetTest {
 		assertEquals(expResult, result);
 
 		x = -65;
-		expResult = -65;
+		expResult = 65;
 		result = SecondTaskSet.absoluteValue(x);
 		assertEquals(expResult, result);
 
@@ -185,6 +185,13 @@ public class SecondTaskSetTest {
 		a = 1;
 		b = 1;
 		c = 2;
+		expResult = false;
+		result = SecondTaskSet.triangel(a, b, c);
+		assertEquals(expResult, result);
+
+		a = 1;
+		b = 1;
+		c = 1;
 		expResult = true;
 		result = SecondTaskSet.triangel(a, b, c);
 		assertEquals(expResult, result);
@@ -199,6 +206,27 @@ public class SecondTaskSetTest {
 		a = 2;
 		b = 3;
 		c = 4;
+		expResult = true;
+		result = SecondTaskSet.triangel(a, b, c);
+		assertEquals(expResult, result);
+
+		a = 5;
+		b = 1;
+		c = 1;
+		expResult = false;
+		result = SecondTaskSet.triangel(a, b, c);
+		assertEquals(expResult, result);
+
+		a = 1;
+		b = 5;
+		c = 1;
+		expResult = false;
+		result = SecondTaskSet.triangel(a, b, c);
+		assertEquals(expResult, result);
+
+		a = 1;
+		b = 1;
+		c = 5;
 		expResult = false;
 		result = SecondTaskSet.triangel(a, b, c);
 		assertEquals(expResult, result);

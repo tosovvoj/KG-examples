@@ -17,12 +17,12 @@ public class RandomNoteGenerator {
 	private static String[] notesOnlyCFH = new String[]{"C", "F", "H"};
 	private static Random random = new Random();
 
-	private String nextNote() {
+	public String nextNote() {
 		return allnotes[random.nextInt(allnotes.length)];
 	}
 
-	private String nextNoteLimitedCFH() {
-		return allnotes[random.nextInt(allnotes.length)];
+	public String nextNoteLimitedCFH() {
+		return notesOnlyCFH[random.nextInt(notesOnlyCFH.length)];
 	}
 
 }
