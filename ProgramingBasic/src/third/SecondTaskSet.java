@@ -26,7 +26,7 @@ public class SecondTaskSet {
 
 	//tato funkce ma vzdy vrátiti 7
 	public static int seven() {
-		return 7;
+		return 0;
 	}
 // vrací true pokud vstupní číslo je větší nebo rovno 7 jinak false
 	//pro 5 vrátí false
@@ -73,6 +73,7 @@ public class SecondTaskSet {
 		int counter = 1;
 		while (counter <= n) {
 			sum = sum + counter;
+			counter = counter + 1;
 		}
 		return sum;
 	}
