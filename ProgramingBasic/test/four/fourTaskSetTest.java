@@ -36,7 +36,7 @@ public class fourTaskSetTest {
 		System.out.println("power");
 		base = 1;
 		exponent = 2;
-		expResult = 2;
+		expResult = 1;
 		result = fourTaskSet.power(base, exponent);
 		assertEquals(expResult, result);
 
@@ -112,7 +112,7 @@ public class fourTaskSetTest {
 
 		System.out.println("prime");
 		n = 110;
-		expResult = true;
+		expResult = false;
 		result = fourTaskSet.prime(n);
 		assertEquals(expResult, result);
 
@@ -149,7 +149,7 @@ public class fourTaskSetTest {
 
 		System.out.println("primeCountUnderN");
 		n = 7;
-		expResult = 3;
+		expResult = 4;
 		result = fourTaskSet.primeCountUnderN(n);
 		assertEquals(expResult, result);
 
